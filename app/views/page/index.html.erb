@@ -1,0 +1,9 @@
+<h1>Page#contact</h1>
+<p>Des gossip en veux-tu en voilà :</p>
+<%= @allgossips.each do |gossip| %>
+    <p>
+      <%= gossip.title %><br/>
+      <%= gossip.content %><br/>
+      <%= gossip.user.first_name %>
+    </p>
+  <% end %>
